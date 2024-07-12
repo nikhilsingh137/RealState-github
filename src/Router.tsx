@@ -7,7 +7,7 @@ import SerachFilterData from "./component/SerachFilterData";
 const AppRouter = () => (
   <BrowserRouter basename="/RealState-github">
     <Routes>
-      <Route path="/RealState-github" element={<Homepage />} />
+      <Route path="/" element={<Homepage />} />
       <Route path="/:userData" element={<SerachFilterData />} />
       <Route path="/about/:userAbout" element={<About />} />
     </Routes>
