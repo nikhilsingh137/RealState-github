@@ -1,9 +1,9 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Homepage from "./page/Homepage";
 import SerachFilterData from "./component/SerachFilterData";
 import About from "./component/About";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (
