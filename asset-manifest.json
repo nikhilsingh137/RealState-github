@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RealState-github/static/css/main.206b3281.css",
-    "main.js": "/RealState-github/static/js/main.85acb9fd.js",
+    "main.css": "/RealState-github/static/css/main.9d7a61e0.css",
+    "main.js": "/RealState-github/static/js/main.85763165.js",
     "static/media/best-property-developer-in-dubai-credo-investments-fze-scaled.jpg": "/RealState-github/static/media/best-property-developer-in-dubai-credo-investments-fze-scaled.9b98cc31f6a5b846f34a.jpg",
     "static/media/testimonials-section-bg-slider-background.jpg": "/RealState-github/static/media/testimonials-section-bg-slider-background.f632e6c867fc362c9ba9.jpg",
     "static/media/diverse-businesspeople-having-meeting-1400x623.jpg": "/RealState-github/static/media/diverse-businesspeople-having-meeting-1400x623.513d0b2e81e998ec9d00.jpg",
     "index.html": "/RealState-github/index.html",
-    "main.206b3281.css.map": "/RealState-github/static/css/main.206b3281.css.map",
-    "main.85acb9fd.js.map": "/RealState-github/static/js/main.85acb9fd.js.map"
+    "main.9d7a61e0.css.map": "/RealState-github/static/css/main.9d7a61e0.css.map",
+    "main.85763165.js.map": "/RealState-github/static/js/main.85763165.js.map"
   },
   "entrypoints": [
-    "static/css/main.206b3281.css",
-    "static/js/main.85acb9fd.js"
+    "static/css/main.9d7a61e0.css",
+    "static/js/main.85763165.js"
   ]
 }
