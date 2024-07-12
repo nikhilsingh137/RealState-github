@@ -22,7 +22,9 @@ const HomeImagebox = () => {
                 <>
                   <h2>{item.title}</h2>
                   <p>{item.paragraph}</p>
-                  <a href={`/about${item.url}`}>{item.button}</a>
+                  <a href={`/RealState-github/about${item.url}`}>
+                    {item.button}
+                  </a>
                 </>
               );
             })}
