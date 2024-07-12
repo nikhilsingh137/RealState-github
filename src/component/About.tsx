@@ -20,9 +20,7 @@ const About = () => {
 
   const filterData =
     data.aboutData &&
-    data.aboutData.filter(
-      (item) => item.url === `/RealState-github/${userAbout}/`
-    );
+    data.aboutData.filter((item) => item.url === `/${userAbout}/`);
   console.log(filterData, "hello");
 
   return (
