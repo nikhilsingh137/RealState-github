@@ -13,7 +13,7 @@ const router = createHashRouter([
     ),
   },
   {
-    path: "/:userData",
+    path: "/RealState-github/:userData",
     element: (
       <>
         <SerachFilterData />
