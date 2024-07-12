@@ -22,20 +22,28 @@ export interface IType {
 }
 
 export const fetchHeder = createAsyncThunk("fetchHeder", async () => {
-  const headerData = await fetch("http://localhost:5000/header");
+  const headerData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/ReactHeader.json"
+  );
   return headerData.json();
 });
 
 export const fetchImagebox = createAsyncThunk("fetchImagebox", async () => {
-  const imageData = await fetch("http://localhost:5000/imageboxcontent");
+  const imageData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/Imagebox.json"
+  );
   return imageData.json();
 });
 export const fetchBanner = createAsyncThunk("fetchBanner", async () => {
-  const bannerData = await fetch("http://localhost:5000/banner");
+  const bannerData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/banner.json"
+  );
   return bannerData.json();
 });
 export const fetchFeature = createAsyncThunk("fetchFeature", async () => {
-  const featureData = await fetch("http://localhost:5000/feature");
+  const featureData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/feature.json"
+  );
   return featureData.json();
 });
 export const fetchCity = createAsyncThunk("fetchCity", async () => {
@@ -47,7 +55,9 @@ export const fetchAbout = createAsyncThunk("fetchAbout", async () => {
   return aboutData.json();
 });
 export const fetchFooter = createAsyncThunk("fetchFooter", async () => {
-  const footerData = await fetch("http://localhost:5000/footer");
+  const footerData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/footer.json"
+  );
   return footerData.json();
 });
 
