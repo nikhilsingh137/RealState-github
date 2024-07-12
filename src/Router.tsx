@@ -8,10 +8,7 @@ const AppRouter = () => (
   <BrowserRouter basename="/RealState-github">
     <Routes>
       <Route path="/RealState-github" element={<Homepage />} />
-      <Route
-        path="/RealState-github/:userData"
-        element={<SerachFilterData />}
-      />
+      <Route path="/:userData" element={<SerachFilterData />} />
       <Route path="/about/:userAbout" element={<About />} />
     </Routes>
   </BrowserRouter>
