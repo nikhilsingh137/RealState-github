@@ -1,17 +1,20 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Homepage from "./page/Homepage";
 import About from "./component/About";
 import SerachFilterData from "./component/SerachFilterData";
 
 const AppRouter = () => (
-  <Router basename="/RealState-github">
+  <BrowserRouter basename="/RealState-github">
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/:userData" element={<SerachFilterData />} />
+      <Route path="/RealState-github" element={<Homepage />} />
+      <Route
+        path="/RealState-github/:userData"
+        element={<SerachFilterData />}
+      />
       <Route path="/about/:userAbout" element={<About />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 export default AppRouter;
