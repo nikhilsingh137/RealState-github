@@ -4,7 +4,7 @@ import Homepage from "./page/Homepage";
 import About from "./component/About";
 import SerachFilterData from "./component/SerachFilterData";
 
-const router = () => (
+const Router = () => (
   <HashRouter basename="/RealState-github">
     <Routes>
       <Route path="/" element={<Homepage />} />
@@ -14,4 +14,4 @@ const router = () => (
   </HashRouter>
 );
 
-export default router;
+export default Router;

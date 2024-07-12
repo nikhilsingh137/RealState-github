@@ -4,9 +4,10 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Header from "./common-component/Header";
-import { RouterProvider } from "react-router-dom";
-import router from "./Router";
+// import { RouterProvider } from "react-router-dom";
+// import router from "./Router";
 import Footer from "./component/Footer";
+import Router from "./Router";
 // import SliceData from "./redux/SliceData";
 
 const root = ReactDOM.createRoot(
@@ -16,7 +17,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Header />
-      <RouterProvider router={router} />
+      <Router />
       <Footer />
     </Provider>
   </React.StrictMode>
