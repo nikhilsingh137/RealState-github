@@ -13,7 +13,7 @@ const HeaderProp: React.FC<IHeader1> = ({ data }) => {
         data.Header.map((item, index) => {
           return (
             <li>
-              <a href={`/RealState-github${item.url}`}>{item.title}</a>
+              <a href={`#${item.url}`}>{item.title}</a>
               {(item.id === 2 || item.id === 4) && item.subTitle && (
                 <>
                   <div
