@@ -5,7 +5,7 @@ import About from "./component/About";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "/RealState-github",
     element: (
       <>
         <Homepage />
