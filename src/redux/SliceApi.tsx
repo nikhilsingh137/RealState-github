@@ -51,7 +51,9 @@ export const fetchCity = createAsyncThunk("fetchCity", async () => {
   return cityData.json();
 });
 export const fetchAbout = createAsyncThunk("fetchAbout", async () => {
-  const aboutData = await fetch("http://localhost:5000/about");
+  const aboutData = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/aboutData.json"
+  );
   return aboutData.json();
 });
 export const fetchFooter = createAsyncThunk("fetchFooter", async () => {
