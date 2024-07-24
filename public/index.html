@@ -31,12 +31,11 @@
     -->
     <title>React App</title>
     <script>
+      // Check if the URL path is not matching a static file
       // Redirect all paths to /index.html
-      var path = window.location.pathname;
       if (
-        !path.startsWith("/RealState-github/") &&
-        path !== "/" &&
-        path !== "/RealState-github"
+        window.location.pathname !== "/" &&
+        !window.location.pathname.startsWith("/RealState-github/")
       ) {
         window.location.replace("/RealState-github/");
       }
