@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404</title>
-    <meta http-equiv="refresh" content="0; URL=/RealState-github" />
+    <script type="text/javascript">
+      var pathname = window.location.pathname;
+      var redirectPath =
+        "/RealState-github" + pathname.substring("/RealState-github".length);
+      window.location.href = redirectPath;
+    </script>
   </head>
   <body></body>
 </html>
