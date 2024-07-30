@@ -92,6 +92,7 @@ const Header = () => {
               <FormOverlay handleHide={handleoverlay} />
             </div>
           )}
+          <div className={Style.line} style={{ width: `${line}` }}></div>
           <div className={Style.Content}>
             <div className={Style.logo}>
               <img src={HDImg} alt="Logo" />
@@ -201,7 +202,6 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className={Style.line} style={{ width: `${line}` }}></div>
         </div>
       </StickyBox>
     </>
