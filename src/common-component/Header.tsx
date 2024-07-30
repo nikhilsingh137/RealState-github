@@ -8,6 +8,7 @@ import StickyBox from "react-sticky-box";
 import FormOverlay from "../component/FormOverlay";
 
 const Header = () => {
+  const [line, setLine] = useState(0);
   const [detail, setDetail] = useState("");
   const [toggle, setToggle] = useState(false);
   const [overlay, setOverlay] = useState(false);
@@ -68,6 +69,19 @@ const Header = () => {
     setOverlay(false);
     document.body.style.overflow = "";
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      const documentHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const line = (scrolled / documentHeight) * 100;
+      setLine(line);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   return (
     <>
@@ -187,6 +201,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
+          <div className={Style.line} style={{ width: `${line}` }}></div>
         </div>
       </StickyBox>
     </>
